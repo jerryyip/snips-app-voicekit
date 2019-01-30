@@ -44,7 +44,7 @@ class VoiceKit(object):
         hermes.publish_end_session(intent_message.session_id, "")
         
         # action code goes here...
-        print '[Received] intent: {}'.format(intent_message.intent.intent_name)
+        print('[Received] intent: {}'.format(intent_message.intent.intent_name))
         self.relay.on()
 
         # if need to speak the execution result by tts
@@ -55,7 +55,7 @@ class VoiceKit(object):
         hermes.publish_end_session(intent_message.session_id, "")
 
         # action code goes here...
-        print '[Received] intent: {}'.format(intent_message.intent.intent_name)
+        print('[Received] intent: {}'.format(intent_message.intent.intent_name))
         self.relay.off()
 
         # if need to speak the execution result by tts
@@ -66,7 +66,7 @@ class VoiceKit(object):
         hermes.publish_end_session(intent_message.session_id, "")
 
         # action code goes here...
-        print '[Received] intent: {}'.format(intent_message.intent.intent_name)
+        print('[Received] intent: {}'.format(intent_message.intent.intent_name))
 
         # In Celsius
         temperature, _ = self.temperature_humidity_sensor.read()
@@ -79,7 +79,7 @@ class VoiceKit(object):
         hermes.publish_end_session(intent_message.session_id, "")
 
         # action code goes here...
-        print '[Received] intent: {}'.format(intent_message.intent.intent_name)
+        print('[Received] intent: {}'.format(intent_message.intent.intent_name))
 
         _, humidity = self.temperature_humidity_sensor.read()
 
